@@ -1,0 +1,42 @@
+body {
+    color: #566787;
+    background: #f5f5f5;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+  }
+  .table-wrapper {
+    background: #631bc2;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+  .table-title {
+    padding: 16px;
+    background: #435d7d;
+    color: #fff;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+  }
+  .table-title h2 {
+    font-size: 24px;
+  }
+  .table-title .btn {
+    color: #33138b;
+    float: right;
+    font-size: 13px;
+    border: none;
+    margin-left: 10px;
+  }
+  .table-title .btn i {
+    margin-right: 5px;
+  }
+  .table td {
+    vertical-align: middle;
+  }
+  .custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+  }
+  .custom-checkbox label:before {
+    content: '';
+    background: white;
+  }  
