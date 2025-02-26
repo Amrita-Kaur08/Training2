@@ -1,0 +1,18 @@
+{
+    "employees": [
+      {
+        "id": 294463,
+        "name": "Amrita",
+        "email": "am@gmail.com",
+        "address": {
+          "house": "48",
+          "street": "ncd",
+          "city": "zmk"
+        },
+        "phone": "6768787000",
+        "website": "bjcjkckzxxc",
+        "company": "gjhaxhkaj",
+        "role": "super_admin"
+      }
+    ]
+  }
