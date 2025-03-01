@@ -1,0 +1,78 @@
+{
+  "employees": [
+    {
+      "id": "989595",
+      "name": "vbvv",
+      "email": "vhhjb@gmail.com",
+      "password": "Amrita123###",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddd"
+      },
+      "phone": "7798990900",
+      "website": "kjkj",
+      "company": "bnbmnm",
+      "role": "super_admin"
+    },
+    {
+      "id": "c18b",
+      "name": "amrita Kaur",
+      "email": "am@gmail.com",
+      "password": "Amrita123##@",
+      "address": {
+        "house": "123 Main St",
+        "street": "Main Street",
+        "city": "New York"
+      },
+      "phone": "7899898976",
+      "website": "example.com",
+      "company": "bnbmnmjssjxnjN",
+      "role": "customer"
+    },
+    {
+      "id": "ccba",
+      "name": "Amrita Kaur",
+      "email": "am@gmail.com",
+      "phone": "7899898976",
+      "address": {
+        "house": "123 Main St",
+        "street": "    Main Street",
+        "city": "    New York"
+      },
+      "website": "example.com",
+      "company": "Talentelgia Technologies pvt ltd",
+      "role": "customer"
+    },
+    {
+      "id": "ccb",
+      "name": "Amrita Kaur",
+      "email": "amm@gmail.com",
+      "phone": "7899898976",
+      "password": "Amrita123##@@",
+      "address": {
+        "house": "123 Main St",
+        "street": "    Main Street",
+        "city": "    New York"
+      },
+      "website": "example.com",
+      "company": "Talentelgia Technologies pvt ltd",
+      "role": "super_admin"
+    },
+    {
+      "id": "8690",
+      "name": "yeeeeee",
+      "email": "yeeee@gmail.com",
+      "password": "yeee12@##",
+      "address": {
+        "house": "56",
+        "street": "Homeland",
+        "city": "mohali"
+      },
+      "phone": "7798990900",
+      "website": "yeee.com",
+      "company": "yeeee",
+      "role": "superadmin"
+    }
+  ]
+}
