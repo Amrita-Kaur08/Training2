@@ -239,6 +239,4 @@ document.getElementById("editEmployeeForm").addEventListener("submit", async fun
   }
 });
 
-
-
 fetchEmployees();
