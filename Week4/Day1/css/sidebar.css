@@ -1,0 +1,29 @@
+/* Sidebar Styling */
+.sidebar {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sidebar button:hover {
+    background-color: #444;
+  }
+  
