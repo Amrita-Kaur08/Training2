@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <script src="../scripts/dom.js"></script>
+    <script src="../scripts/validation.js"></script>
+    <script src="../scripts/styleManipulator.js"></script>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/index.js" defer></script>
+</head>
+<body>
+    <h1>User Management System</h1>
+
+    <!-- Form to add new employee -->
+    <form id="addEmployeeForm">
+        <input type="text" id="addName" placeholder="Name" required>
+        <input type="email" id="addEmail" placeholder="Email" required>
+        <input type="text" id="addPhone" placeholder="Phone" required>
+        <input type="text" id="addAddress" placeholder="Address" required>
+        <input type="text" id="addWebsite" placeholder="Website" required>
+        <input type="text" id="addCompany" placeholder="Company" required>
+        <select id="addRole">
+            <option value="admin">Admin</option>
+            <option value="super_admin">Super Admin</option>
+            <option value="customer">Customer</option>
+        </select>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <div id="message"></div>
+
+    <!-- Table to display employees -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            <!-- Employees will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <div id="spinner" style="display:none;">Loading...</div>
+</body>
+</html>

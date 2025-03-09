@@ -1,0 +1,62 @@
+{
+  "employees": [
+    {
+      "id": "ccb",
+      "name": "Amrita Kaur",
+      "email": "amm@gmail.com",
+      "phone": "7899898976",
+      "password": "Amrita123##@@",
+      "address": {
+        "house": "123 Main St",
+        "street": "    Main Street",
+        "city": "    New York"
+      },
+      "website": "example.com",
+      "company": "Talentelgia Technologies pvt ltd",
+      "role": "super_admin"
+    },
+    {
+      "id": "236543",
+      "name": "Kaur",
+      "email": "Kaur@gmail.com",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddd"
+      },
+      "phone": "7798990900",
+      "website": "Talent.com",
+      "company": "Talentelgia",
+      "role": "admin"
+    },
+    {
+      "id": "1914",
+      "name": "Kaur Amrita",
+      "email": "Kaur@gmail.com",
+      "password": "Kaur08@##",
+      "address": {
+        "house": "787",
+        "street": "hhbjbjbb",
+        "city": "bknkl"
+      },
+      "phone": "7899898976",
+      "website": "example.com",
+      "company": "bnbmnmjssjxnjN",
+      "role": "customer"
+    },
+    {
+      "id": 622641,
+      "name": "kaur amrita",
+      "email": "Kaur123@gmail.com",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddddemmddmsmd"
+      },
+      "phone": "7798990999",
+      "website": "Talentelgia.com",
+      "company": "Talentelgia",
+      "role": "admin"
+    }
+  ]
+}
