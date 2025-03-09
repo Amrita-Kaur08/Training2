@@ -1,0 +1,132 @@
+{
+  "employees": [
+    {
+      "id": 989595,
+      "name": "vbvv",
+      "email": "vhhjb@gmail.com",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddd"
+      },
+      "phone": "7798990900",
+      "website": "kjkj",
+      "company": "bnbmnm",
+      "role": "super_admin"
+    },
+    {
+      "id": "c18b",
+      "name": "amrita Kaur",
+      "email": "am@gmail.com",
+      "password": "Amrita123##@",
+      "address": {
+        "house": "123 Main St",
+        "street": "Main Street",
+        "city": "New York"
+      },
+      "phone": "7899898976",
+      "website": "example.com",
+      "company": "bnbmnmjssjxnjN",
+      "role": "customer"
+    },
+    {
+      "id": "ccba",
+      "name": "Amrita Kaur",
+      "email": "am@gmail.com",
+      "phone": "7899898976",
+      "address": {
+        "house": "123 Main St",
+        "street": "    Main Street",
+        "city": "    New York"
+      },
+      "website": "example.com",
+      "company": "Talentelgia Technologies pvt ltd",
+      "role": "customer"
+    },
+    {
+      "id": "9c9b",
+      "name": "Amrita Kaur",
+      "email": "am@gmail.com",
+      "phone": "7899898976",
+      "address": {
+        "house": "123 Main St",
+        "street": "Main Street,New York"
+      },
+      "website": "example.com",
+      "company": "Talentelgia Technologies pvt ltd",
+      "role": "customer"
+    },
+    {
+      "id": "3ba6",
+      "name": "Amrita Kaur",
+      "email": "am@gmail.com",
+      "phone": "7899898976",
+      "address": {
+        "house": "123 Main St",
+        "street": "     Main Street",
+        "city": "    New York"
+      },
+      "website": "example.com",
+      "company": "Talentelgia Technologies pvt ltd",
+      "role": "customer"
+    },
+    {
+      "id": "1c69",
+      "email": "am@gmail.com",
+      "name": "amrita Kaur",
+      "role": "customer",
+      "phone": "7899898976",
+      "address": {
+        "house": "123 Main St",
+        "street": "Main Street",
+        "city": "New York"
+      },
+      "website": "exam.com",
+      "company": "bnbmnmjssjxnjN"
+    },
+    {
+      "id": "0b96",
+      "email": "am@gmail.com",
+      "name": "amrita Kaur",
+      "role": "customer",
+      "phone": "7899898976",
+      "address": {
+        "house": "123 Main St",
+        "street": "Main Street",
+        "city": "New York"
+      },
+      "website": "example.com",
+      "company": "bnbmnmjssjxnjN"
+    },
+    {
+      "id": "92ce",
+      "name": "Kaur Amrita",
+      "email": "Kaur@gmail.com",
+      "password": "Kaur123#@",
+      "address": {
+        "house": "787",
+        "street": "hhbjbjbb",
+        "city": "bknkl"
+      },
+      "phone": "09898978787",
+      "website": "exam.com",
+      "company": "Talentelgia",
+      "role": "superadmin"
+    },
+    {
+      "id": "eaa4",
+      "name": "gcgvb",
+      "email": "vhhjb@gmail.com",
+      "password": "Kaur123@@",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddd"
+      },
+      "phone": "09898978787",
+      "website": "example.com",
+      "company": "bnbmnm",
+      "role": "admin"
+    }
+  ]
+}

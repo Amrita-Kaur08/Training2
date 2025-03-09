@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "id": "151487",
+      "name": "amrita Kaur",
+      "email": "am@gmail.com",
+      "address": {
+        "house": "undefined",
+        "street": "undefined",
+        "city": "undefined"
+      },
+      "phone": "7899898976",
+      "website": "kjkj",
+      "company": "bnbmnm",
+      "role": "Super-Admin"
+    },
+    {
+      "id": 989595,
+      "name": "vbvv",
+      "email": "vhhjb@gmail.com",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddd"
+      },
+      "phone": "7798990900",
+      "website": "kjkj",
+      "company": "bnbmnm",
+      "role": "super_admin"
+    }
+  ]
+}

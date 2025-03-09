@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+        .btn {
+      margin: 5px;
+    }
+    #editForm {
+      margin-top: 20px;
+      display: none; /* Initially hidden */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+      <h2>Welcome <span id="headerUserName">User</span></h2> <!-- Display the user's name -->
+    </div>
+    
+    <!-- Table to display user details -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Website</th>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Actions</th> <!-- Action column for edit, delete, logout -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="userName">Loading...</td>
+          <td id="userEmail">Loading...</td>
+          <td id="userPhone">Loading...</td>
+          <td id="userAddress">Loading...</td>
+          <td id="userWebsite">Loading...</td>
+          <td id="userCompany">Loading...</td>
+          <td id="userRole">Loading...</td>
+          <td>
+            <!-- Actions Buttons: Edit, Logout, Delete -->
+            <button id="editButton" class="btn btn-primary">Edit</button>
+            <button id="logoutButton" class="btn btn-danger">Logout</button>
+            <button id="deleteButton" class="btn btn-warning">Delete Account</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Edit Form (hidden by default) -->
+    <div id="editForm">
+      <h3>Edit Your Information</h3>
+      <form id="userEditForm">
+        <div class="mb-3">
+          <label for="editName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="editName">
+        </div>
+        <div class="mb-3">
+          <label for="editEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="editEmail">
+        </div>
+        <div class="mb-3">
+          <label for="editPhone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="editPhone">
+        </div>
+        <div class="mb-3">
+          <label for="editAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="editAddress">
+        </div>
+        <div class="mb-3">
+          <label for="editWebsite" class="form-label">Website</label>
+          <input type="text" class="form-control" id="editWebsite">
+        </div>
+        <div class="mb-3">
+          <label for="editCompany" class="form-label">Company</label>
+          <input type="text" class="form-control" id="editCompany">
+        </div>
+        <div class="mb-3">
+          <label for="editRole" class="form-label">Role</label>
+          <input type="text" class="form-control" id="editRole">
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <button type="button" id="cancelEditButton" class="btn btn-secondary">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/customer.ts"></script> <!-- Link to the JS file -->
+</body>
+</html>
