@@ -1,0 +1,227 @@
+/*General Styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar 
+.navbar {
+    width: 100%;
+    background: #0c5794;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-sizing: border-box; /* Ensures proper spacing 
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar img {
+    height: 40px;
+    margin-right: 10px;}
+/* Profile Button 
+#profileBtn {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 15px; /* Reduce padding 
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto; /* Let it adjust naturally 
+    margin: 0; /* Remove excess margin 
+}
+
+#profileBtn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Search Section */
+/* Search Container 
+.search-container {
+    margin: 40px auto; /* Centers the container 
+    padding: 25px;
+    background: white;
+    width: 90%;
+    max-width: 450px; /* Ensures it's responsive 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center; /* Aligns content inside 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures elements inside are centered 
+}
+
+/* Input Field 
+.search-container input {
+    width: calc(100% - 20px); /* Prevents overflow 
+    max-width: 400px; /* Prevents stretching too much 
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+/* Search Button 
+.search-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: calc(100% - 20px); /* Prevents overflow 
+    max-width: 400px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather Display 
+.weather-box {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Favorites Section 
+.favorites-container {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* Profile Button
+#profileBtn {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    width: 150px;  /* Maintaining width 
+}
+#profileBtn:hover {
+    background-color: #007bff;
+    color: white;} /*
+
+
+/* General Styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures elements are vertically aligned */
+    background: #0c5794;
+    color: white;
+    padding: 10px 30px; /* Reduced padding */
+    height: 50px; /* Set a fixed height if needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Search */
+.search-container {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Weather Box */
+.weather-box {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.favorite-icon {
+    color: red;
+    cursor: pointer;
+}
+
+/* Favorites */
+.favorites-container {
+    background: white;
+    width: 30%;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 10px gray;
+}

@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "0669",
+      "name": "Amrita Kaur",
+      "email": "amrita.kaur@talentelgia.com",
+      "password": "AK123@",
+      "favorites": ["New York", "Los Angeles"]
+
+    },
+    {
+      "id": "6966",
+      "name": "Amrita",
+      "email": "user12@yopmail.com",
+      "password": "AK12345",
+      "favorites": ["New York", "Los Angeles", "Mohali", "Chandigarh"]
+    },
+    {
+      "id": "a11f",
+      "name": "Kaur Amrita",
+      "email": "Kaur@gmail.com",
+      "password": "Kaur08@##",
+      "favorites": ["New York", "Los Angeles"]
+    }
+  ]
+}
