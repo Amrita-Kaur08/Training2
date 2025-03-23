@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    
+    <!-- Tailwind CSS & FontAwesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    
+    <style>
+        /* Custom Background Gradient */
+        body {
+            background: linear-gradient(to right, #446299, #2a5298);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="max-w-5xl w-full bg-white p-8 rounded-lg shadow-2xl">
+        <!-- Navbar -->
+        <nav class="flex flex-wrap justify-between items-center mb-6 gap-4">
+            <div class="flex items-center space-x-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Logo" class="w-10 h-10">
+                <h2 class="text-2xl font-bold text-gray-800">Weather Forecast</h2>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="relative w-full sm:w-1/2 md:w-1/3">
+                <input id="cityInput" type="text" placeholder="Search city here..." class="w-full py-2 px-4 rounded-full shadow focus:outline-none border border-gray-300">
+            </div>
+
+            <button id="searchBtn" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition">Search</button>
+
+            <!-- Wishlist Heart Icon -->
+            <i class="fa fa-heart text-red-500 text-2xl cursor-pointer hover:scale-110 transition" onclick="addToFavorites()" title="Add to Wishlist"></i>
+
+            <!-- Profile Dropdown -->
+            <div class="relative">
+                <button id="profileIcon" class="bg-gray-900 text-white font-semibold w-10 h-10 rounded-full flex items-center justify-center cursor-pointer">
+                    A <!-- This will be dynamically updated -->
+                </button>
+
+                <div id="profileDropdown" class="hidden absolute right-0 mt-3 w-44 bg-white rounded-lg shadow-md text-center">
+                    <p id="usernameDisplay" class="p-3 font-semibold text-gray-700">Amrita Kaur</p>
+                    <hr>
+                    <!-- Favorites Section -->
+                    <button id="viewFavoritesBtn" onclick="toggleFavorites()" class="mt-6 bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-700 transition">
+                        View Wishlist
+                    </button>
+                    <div id="favorites" class="mt-4 bg-white p-6 rounded-lg shadow hidden">
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">Favorite Cities</h2>
+                        <ul id="favoritesList" class="list-disc pl-6 text-gray-700"></ul>
+                    </div>
+
+                    <p id="signOut" class="p-3 text-red-500 hover:bg-gray-200 cursor-pointer">Sign Out</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Weather Info -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-blue-100 p-6 rounded-lg shadow text-center">
+                <h2 id="cityName" class="text-xl font-bold text-gray-800">City</h2>
+                <p id="currentTime" class="text-5xl font-bold text-blue-600 mt-2">--:--</p>
+                <p id="currentDate" class="text-md text-gray-600">Date</p>
+            </div>
+            <div class="bg-blue-100 p-6 rounded-lg shadow flex flex-col items-center">
+                <h2 id="temperature" class="text-4xl font-bold text-blue-600">--°C</h2>
+                <p id="feelsLike" class="text-sm text-gray-500">Feels like: --°C</p>
+                <p id="description" class="text-lg font-semibold text-gray-700">Weather</p>
+                <div class="grid grid-cols-2 gap-4 mt-4 text-sm text-gray-700">
+                    <p>🌅 Sunrise: <span id="sunrise">--:--</span></p>
+                    <p>🌇 Sunset: <span id="sunset">--:--</span></p>
+                    <p>💧 Humidity: <span id="humidity">--%</span></p>
+                    <p>💨 Wind: <span id="windSpeed">-- km/h</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forecast Sections Side by Side -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <!-- 5-Day Forecast (Line by Line) -->
+            <div class="bg-blue-50 p-6 rounded-lg shadow text-left">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">5 Days Forecast:</h3>
+                <div id="fiveDayForecast" class="space-y-2"></div>
+            </div>
+
+            <!-- Hourly Forecast (Side by Side) -->
+            <div class="bg-blue-50 p-6 rounded-lg shadow text-left">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Hourly Forecast:</h3>
+                <div id="hourlyForecast" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-center"></div>
+            </div>
+        </div>
+
+    <script>
+        // Toggle Profile Dropdown
+        document.getElementById("profileIcon").addEventListener("click", function () {
+            document.getElementById("profileDropdown").classList.toggle("hidden");
+        });
+
+        // Sign Out Button
+        document.getElementById("signOut").addEventListener("click", function () {
+            alert("You have been signed out!");
+            window.location.href = "getstarted.html"; // Redirect to login page
+        });
+
+        // Wishlist Functionality
+        function addToFavorites() {
+            let city = document.getElementById("cityInput").value;
+            if (city) {
+                let list = document.getElementById("favoritesList");
+                let item = document.createElement("li");
+                item.textContent = city;
+                list.appendChild(item);
+                alert(city + " added to Wishlist!");
+            } else {
+                alert("Enter a city to add to Wishlist!");
+            }
+        }
+
+        function toggleFavorites() {
+            document.getElementById("favorites").classList.toggle("hidden");
+        }
+    </script>
+<script src="script.js"></script>
+</body>
+</html>
