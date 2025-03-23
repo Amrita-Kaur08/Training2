@@ -1,0 +1,33 @@
+{
+  "employees": [
+    {
+      "id": "1914",
+      "name": "Kaur Amrita",
+      "email": "Kaur@gmail.com",
+      "password": "Kaur08@##",
+      "address": {
+        "house": "787",
+        "street": "hhbjbjbb",
+        "city": "bknkl"
+      },
+      "phone": "7899898976",
+      "website": "example.com",
+      "company": "bnbmnmjssjxnjN",
+      "role": "customer"
+    },
+    {
+      "id": "622641",
+      "name": "kaur amrita",
+      "email": "Kaur123@gmail.com",
+      "address": {
+        "house": "56",
+        "street": "hjhdjhd",
+        "city": "sddddemmddmsmd"
+      },
+      "phone": "7798990999",
+      "website": "Talentelgia.com",
+      "company": "Talentelgia",
+      "role": "admin"
+    }
+  ]
+}
