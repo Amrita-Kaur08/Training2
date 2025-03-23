@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+/* Container for the page */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Header */
+h2 {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Edit Button Styles */
+#editButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#editButton:hover {
+    background-color: #218838;
+}
+
+/* Edit Form Styles */
+#editForm {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #007bff;
+    font-size: 22px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"], #cancelEditButton {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Save Button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Cancel Button */
+#cancelEditButton {
+    background-color: #6c757d;
+    color: white;
+}
+
+#cancelEditButton:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    table, #editForm {
+        width: 100%;
+    }
+}
+
+
