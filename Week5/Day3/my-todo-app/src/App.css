@@ -1,0 +1,151 @@
+body {
+  background-color: rgb(35, 190, 35) !important; /* Force background color */
+}
+
+/* Center the app container */
+.todo-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input and button container */
+.input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Input field */
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+/* Add button */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* List container */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Individual to-do item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease;
+}
+
+.todo-item:hover {
+  background: #f9f9f9;
+}
+
+/* Task text */
+.todo-item span {
+  flex-grow: 1;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Completed tasks */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  gap: 10px; /* Adds space between edit and delete buttons */
+}
+
+/* Action buttons */
+.action-btn {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+/* Edit button */
+.edit {
+  background: #ffc107;
+  color: #333;
+}
+
+.edit:hover {
+  background: #e0a800;
+}
+
+/* Delete button */
+.delete {
+  background: #dc3545;
+  color: white;
+}
+
+.delete:hover {
+  background: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .todo-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .todo-item span {
+    font-size: 14px;
+  }
+}
